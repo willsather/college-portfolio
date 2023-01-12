@@ -1,0 +1,5 @@
+# Local Netlify folder
+.netlify
+three-js-examples/03-basic/node_modules
+three-js-examples//04-webpack/node_modules
+three-js-examples/05-webpack/node_modules

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="COVID Dashboard.exe" version="1.0.0.0" publicKeyToken="f260335fdc989023" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="COVID Dashboard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="COVID Dashboard.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="COVID Dashboard.exe" size="195040">
+      <assemblyIdentity name="COVID Dashboard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zt2c39Yqo6ovPzus8ifXg4DVXHPX7fF/tPXw2fAMwvg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FontAwesome.Sharp.dll" size="440832">
+      <assemblyIdentity name="FontAwesome.Sharp" version="5.12.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LY9LW17F4iMdlS1RJ92c2KkPG5tGmXlTlb+xtWyAurw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="165376">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.11.23.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HUtdWo1R9NZ7BQDIbleBX5xNRAvmONcs84JbDHLkQdc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="COVID Dashboard.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-P0MO2CI\wills" issuerKeyHash="8a7c7e882bc824552cc6c8c63305382527306c5d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>y6Q1FbY6NtjrcuokwB3rZev2TZY2Wd8O1dh5cy0COrE=</DigestValue></Reference></SignedInfo><SignatureValue>LYUXkxzcD5pGySyU1lSn7VHHapI/PN/oOGCFQ/WXjVUcIhAJXjzOA1xvUruqvlDN+qoiKLiOlFeWLwgASsv1XVF6m1Irk162XdhF6XVvqxi18VW3fOLQ5b29RSMDKzgmTd7d+ftilx1yX49okjzWdC5WvZfO3ixA5CgYWREBC0Y=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>nQ3BgHWJRa9u4S6cHPTruYmvy3EKGhM/9o3INL6rubEtBFkp1zswaiIyDkRct0lZbyKXhztZ6wycXr+RqEjWqF7YYz3guePfY1IQS2AHlZ2hb/wuwd2kmy+zD0nDqOe36qP2JIY64wSCJgcj9BG6/I09U0JRD+gADQC7Ft4GRRk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b13a022d7379d8d50edf5936964df6eb65eb1dc024ea72ebd8363ab61535a4cb" Description="" Url=""><as:assemblyIdentity name="COVID Dashboard.exe" version="1.0.0.0" publicKeyToken="f260335fdc989023" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-P0MO2CI\wills</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>jRNOI7peEzt4GdyGN0yEO5dU+wgG9RSSh1Dy0Yjkjj0=</DigestValue></Reference></SignedInfo><SignatureValue>cvDu6ieWWcBnh9vx8vzMjeC1uqHKafjH5+x2Bdu95dfDQ7iJL7ZBVRz4JXyyrJadXdyHQLIUPDE6M6oS7a0aNe8orzNcVK1ZqWYJgO04k6rfjJ50DskG/XGEAJww54NC/apcm1d4b1CDlhHOc0zuS142xNyZ4aO1jZdE7125xMI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nQ3BgHWJRa9u4S6cHPTruYmvy3EKGhM/9o3INL6rubEtBFkp1zswaiIyDkRct0lZbyKXhztZ6wycXr+RqEjWqF7YYz3guePfY1IQS2AHlZ2hb/wuwd2kmy+zD0nDqOe36qP2JIY64wSCJgcj9BG6/I09U0JRD+gADQC7Ft4GRRk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQSWTU71ZGa6tC3Cv+KvHvUzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFAAMABNAE8AMgBDAEkAXAB3AGkAbABsAHMwHhcNMjAwNDIxMDE1MDEzWhcNMjEwNDIxMDc1MDEzWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFAAMABNAE8AMgBDAEkAXAB3AGkAbABsAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ0NwYB1iUWvbuEunBz067mJr8txChoTP/aNyDS+q7mxLQRZKdc7MGoiMg5EXLdJWW8il4c7WesMnF6/kahI1qhe2GM94Lnj32NSEEtgB5WdoW/8LsHdpJsvsw9Jw6jnt+qj9iSGOuMEgiYHI/QRuvyNPVNCUQ/oAA0AuxbeBkUZAgMBAAEwDQYJKoZIhvcNAQELBQADgYEANtyNJTwKnMGEdf7RH31mFkI1pMmJR9S0/q8euVpKK5sqColpv2da0tUgdPYL0Xobd/8Y1ZVJ5STzDczMjqznS5MztxHLhbgA56OTIikFNy/l7UcvnUfhOLBlliRofCNxTbmTxohvKUyumGoX/Wgv48p+9ZNbJvd0Zp7uuvtCiQ0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

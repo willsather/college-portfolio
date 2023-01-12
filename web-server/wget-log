@@ -1,0 +1,7 @@
+--2020-12-09 21:18:57--  http://127.0.0.1:8345/image/jpg/29.jpg
+Connecting to 127.0.0.1:8345... connected.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+--2020-12-09 21:20:39--  (try: 2)  http://127.0.0.1:8345/image/jpg/29.jpg
+Connecting to 127.0.0.1:8345... failed: Connection refused.

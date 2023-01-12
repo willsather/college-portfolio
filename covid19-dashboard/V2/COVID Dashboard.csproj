@@ -1,0 +1,200 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{A60AA48F-4108-4886-A060-4648CBBE7AC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>COVID_Dashboard</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.3\lib\net40\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\03\4789cf0a4712c6ce8e1af9d2c4cb7b7a5ed2ef" />
+    <None Include=".git\objects\19\21cf96d92a83a7139b3ad468ef06acd98aa0b1" />
+    <None Include=".git\objects\1a\f7de150c99c12dd67a509fe57c10d63e4eeb04" />
+    <None Include=".git\objects\1d\dfed55c11ad4adb6c81d4742d6b860e01da9c9" />
+    <None Include=".git\objects\1e\a295c350a65b073f35490dda614359ad06d0e6" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\39\645652af62950ebf3b28ec3a5400dcec30b1c4" />
+    <None Include=".git\objects\46\9d9979ad9448fe917f5413683d4b7029c7e9eb" />
+    <None Include=".git\objects\4b\ad0df2e7c3d7ede7a711a9e99bc6e45df856c7" />
+    <None Include=".git\objects\4c\e6fddec962ff3b86038d9939b6be5dfc1e6351" />
+    <None Include=".git\objects\56\efbc7b5f15b5166cc89dae0406895b57de0b67" />
+    <None Include=".git\objects\5f\e7fb935fe3261f2fa58a81b8c7e7b56afb9ac3" />
+    <None Include=".git\objects\60\ec1f3d7c73b6159a1156057244116714c20d4e" />
+    <None Include=".git\objects\7f\afd82fc9de2a95de2921a9fedfbb396e248d14" />
+    <None Include=".git\objects\88\3a7181e5e06e72df9cf8e061d9bfa4b03b4aba" />
+    <None Include=".git\objects\8a\837673cd533982e67d95cc7d7d78d8c917e8cd" />
+    <None Include=".git\objects\8b\3f200200fc2c0543be71543118d4a130b632c8" />
+    <None Include=".git\objects\8b\60838835ecd7c3584ca8698bac0bcfd2361838" />
+    <None Include=".git\objects\90\e4d4739f033b25c9b5eec701ce081abb641607" />
+    <None Include=".git\objects\93\927cf2be6333f5d09f64c2b6b78947660e9280" />
+    <None Include=".git\objects\97\6658e1429d27b0ca277ea517510812f4ac357c" />
+    <None Include=".git\objects\a4\0f75f50fac69d7d545ba684b89ecb0478237ba" />
+    <None Include=".git\objects\a9\72b05c2118e8413b807d192e5d2afd0c42faeb" />
+    <None Include=".git\objects\a9\c7a3b4b0e647511d1b2d09016887f127bdb60f" />
+    <None Include=".git\objects\af\7dbebbacef595e3089c01c05671016c21a8304" />
+    <None Include=".git\objects\b2\c7c50e3e70c9dcf5a51c21ffa0463464b92d50" />
+    <None Include=".git\objects\c6\363383fc7dddb9356c454664811af32de46f43" />
+    <None Include=".git\objects\ce\9e322ed346e8d5eeacf8417b2d4e09566db690" />
+    <None Include=".git\objects\d5\1711b25a97a434dd4fcf4a82e0d2d9b8c39de0" />
+    <None Include=".git\objects\de\f2d2325e6f8ec2fa07924664dfbf9fe7c65abe" />
+    <None Include=".git\objects\e6\740669299d5a84d6532ec4430491f0b9b7b17f" />
+    <None Include=".git\objects\e7\74aa24e5c83c65b970d972fed89b3adf4eb3d3" />
+    <None Include=".git\objects\f1\b6ea63e045a7e72a7fdd5b4ddb74ddb29eedea" />
+    <None Include=".git\objects\f5\fbd017a813c22833b22a5c4a5520a8fa9ba6a3" />
+    <None Include=".git\objects\f9\14dc0e4a2b83454c196429730183e4849972bc" />
+    <None Include=".git\objects\pack\pack-b34c0c25ba17a3208447ac402736e3708433b82a.idx" />
+    <None Include=".git\objects\pack\pack-b34c0c25ba17a3208447ac402736e3708433b82a.pack" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\COVID Dashboard v2\v16\.suo" />
+    <None Include=".vs\COVID Dashboard\v16\.suo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\About_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About_Form.Designer.cs">
+      <DependentUpon>About_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard_Form.Designer.cs">
+      <DependentUpon>Dashboard_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Loading_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Loading_Form.Designer.cs">
+      <DependentUpon>Loading_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Resources_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Resources_Form.Designer.cs">
+      <DependentUpon>Resources_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Symptoms_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Symptoms_Form.Designer.cs">
+      <DependentUpon>Symptoms_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Statistics.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\About_Form.resx">
+      <DependentUpon>About_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard_Form.resx">
+      <DependentUpon>Dashboard_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Loading_Form.resx">
+      <DependentUpon>Loading_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Resources_Form.resx">
+      <DependentUpon>Resources_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Symptoms_Form.resx">
+      <DependentUpon>Symptoms_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="COVID Dashboard\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

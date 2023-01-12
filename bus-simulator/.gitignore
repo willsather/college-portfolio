@@ -1,0 +1,17 @@
+# Extensions to not include in repo
+*.o
+*.out
+*.pvt
+*.csv
+# Ignore build directory
+build
+/build/*
+
+# Ignore docs/HTML directory
+/docs/html/*
+
+# Ignore docs/latex directory
+/docs/latex/*
+
+# OSX automatically includes these, so ignore them as well.
+.DS_Store
